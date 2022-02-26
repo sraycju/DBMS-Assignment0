@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Student Management System</title>
+    <script defer src="studentsrecord.js"></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+      <a href="index.html"><input type="button" value="back" class="btn"></a><h1>Search Student record</h1>
+    <form id="searchform" action="">
+        <label for="roll" class="label-text">Enter your Roll no. : </label>
+        <input type="text" name="rno" id="rno" class="css-input" required placeholder="Enter 3-digit roll no."><br><br>
+        <input type="button" value="Search" class="btn" onclick="return searchStd()">
+        <!-- <input type="button" value="print" class="btn" onclick="return printObj()"> -->
+        <input type="button" value="clear" class="btn" onclick="return clear()">
+        <br><br>
+        <div class="sData">
+            <h2>
+            </h2>
+
+        </div>
+        <h2><span id="search"></span></h2>
+    </form> 
+    
+  </body>
+</html>

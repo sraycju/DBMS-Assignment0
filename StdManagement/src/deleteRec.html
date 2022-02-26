@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Student Management System</title>
+    <script defer src="studentsrecord.js"></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+      <a href="index.html"><input type="button" value="back" class="btn"></a><h1>Delete Student record</h1>
+    <form id="delform" action="">
+        <label for="roll" class="label-text">Enter your Roll no. : </label>
+        <input type="text" name="rno" id="drno" class="css-input" required placeholder="Enter 3-digit roll no."><br><br>
+        <input type="button" value="Delete" class="btn" onclick="return deleteStd()">
+        <!-- <input type="button" value="print" class="btn" onclick="return printObj()"> -->
+        <input type="button" value="clear" class="btn" onclick="return dclear()">
+        <br><br>
+        <h2><span id="del"></span></h2>
+    </form> 
+    
+  </body>
+</html>

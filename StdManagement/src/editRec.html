@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Student Management System</title>
+    <script defer src="studentsrecord.js"></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1>Edit Student record</h1>
+    <a href="index.html"><input type="button" value="back" class="btn"></a>
+    <form id="editform" action="">
+        <label for="roll" class="label-text">Enter your Roll no. : </label>
+        <input type="text" name="rno" id="eno" class="css-input" required placeholder="Enter 3-digit roll no."><br><br>
+        <input type="button" value="Submit" class="btn" onclick="return sStd()">
+        <!-- <input type="button" value="print" class="btn" onclick="return printObj()"> -->
+        <input type="button" value="clear" class="btn" onclick="return eclear()">
+        <br><br>
+        <h2><span id="edit"></span></h2>
+    </form> 
+      <form id="addedit" action="" style="visibility: hidden;">
+          <label for="dept" class="label-text">Choose your department : </label>
+          <select name="dept" id="ed" class="css-input">
+            <option value="CSE">Computer Science and Engineering</option>
+            <option value="ETCE">Electronics and Telecommunication Engineering</option>
+            <option value="IT">Information Technology</option>
+            <option value="EE">Electrical Engineering</option>
+            <option value="CE">Chemical Engineering</option>
+            <option value="MechE">Mechanical Engineering</option>
+            <option value="ME">Metallurgical Engineering</option>
+            <option value="PE">Power Engineering</option>
+          </select><br><br>
+          <label for="name" class="label-text">Enter your name : </label>
+          <input type="text" name="n" id="ename" class="css-input" required><br><br>
+          <label for="address" class="label-text">Enter your address : </label>
+          <input type="text" name="add" id="eaddr" class="css-input"><br><br>
+          <label for="phno" class="label-text">Enter your phone no. : </label>
+          <input type="text" name="pno" id="eph_no" class="css-input" required placeholder="Enter a 10-digit number" maxlength="10" minlength="10"><br><br><br>
+          <input type="button" value="Reset" class="btn" onclick="return e2clear()">
+          <input type="button" value="Edit" class="btn" onclick="return editStd()">
+          <input type="button" value="print" class="btn" onclick="return printObj()">
+          <br><br><h2><span id="eresult"></span></h2>
+      </form>
+     
+  </body>
+</html>

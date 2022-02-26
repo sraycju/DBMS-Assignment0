@@ -1,0 +1,38 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Student Management System</title>
+    <script defer src="studentsrecord.js"></script>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <h1>Add Student record</h1>
+    <a href="index.html"><input type="button" value="back" class="btn"></a>
+      <form id="myform" action="">
+          <label for="roll" class="label-text">Enter your Roll no. : </label>
+          <input type="text" name="rno" id="r_no" class="css-input" placeholder="Enter 3-digit roll no." required><br><br>
+          <label for="dept" class="label-text">Choose your department : </label>
+          <select name="dept" id="d" class="css-input">
+            <option value="CSE">Computer Science and Engineering</option>
+            <option value="ETCE">Electronics and Telecommunication Engineering</option>
+            <option value="IT">Information Technology</option>
+            <option value="EE">Electrical Engineering</option>
+            <option value="CE">Chemical Engineering</option>
+            <option value="MechE">Mechanical Engineering</option>
+            <option value="ME">Metallurgical Engineering</option>
+            <option value="PE">Power Engineering</option>
+          </select><br><br>
+          <label for="name" class="label-text">Enter your name : </label>
+          <input type="text" name="n" id="name" class="css-input" required><br><br>
+          <label for="address" class="label-text">Enter your address : </label>
+          <input type="text" name="add" id="addr" class="css-input"><br><br>
+          <label for="phno" class="label-text">Enter your phone no. : </label>
+          <input type="text" name="pno" id="ph_no" class="css-input" required placeholder="Enter a 10-digit number" maxlength="10" minlength="10"><br><br><br>
+          <input type="button" value="Reset" class="btn" onclick="return cancel()">
+          <input type="button" value="Add" class="btn" onclick="return addSave()">
+          <!-- <input type="button" value="print" class="btn" onclick="return printObj()"> -->
+          <br><br><h2><span id="result"></span></h2>
+      </form>
+     
+  </body>
+</html>
